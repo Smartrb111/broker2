@@ -13,9 +13,6 @@ public class CityController {
 
     private final CityService cityService;
 
-
-
-
     @GetMapping
     public CityDto getCityById(@RequestParam Long cityId) throws Exception {
         return cityService.getById(cityId);

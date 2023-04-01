@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/weather_db
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  key:
+    name: 360fddf40f4990d93d3c8df64b5e502b
+  loc:
+    url: "https://api.openweathermap.org/data/2.5/weather?lat=%s&lon=%s&appid=key"
